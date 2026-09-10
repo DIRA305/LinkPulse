@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fce4ec; /* Latar belakang Pink Pastel terang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(244, 143, 177, 0.3);
+    max-width: 500px;
+    width: 100%;
+    border: 3px solid #f8bbd0; /* Sempadan Pink */
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #ad1457; /* Teks Tajuk Pink Gelap */
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+p {
+    color: #880e4f;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #f48fb1;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #fff8fa;
+}
+
+input[type="text"]:focus {
+    border-color: #e91e63;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ec407a; /* Butang Utama Pink */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-card {
+    border-top: 2px dashed #f48fb1;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.result-card h2 {
+    font-size: 1.2rem;
+    color: #880e4f;
+    margin-bottom: 12px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.score {
+    font-size: 1.5rem;
+}
+
+.status-badge {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Warna Status Risiko */
+.status-safe { 
+    background-color: #c8e6c9; /* Low Risk - Hijau */
+    color: #2e7d32; 
+}
+
+.status-warning { 
+    background-color: #fff59d; /* Medium Risk - Kuning */
+    color: #f57f17; 
+}
+
+.status-danger { 
+    background-color: #ffcdd2; /* High Risk - Merah */
+    color: #c62828; 
+}
+
+.details h3 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.details ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 0.88rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.action-box {
+    text-align: center;
+}
+
+.btn-proceed {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #a5d6a7;
+    color: #1b5e20;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-proceed-warning {
+    background-color: #ffe082;
+    color: #e65100;
+}
+
+.blocked-msg {
+    color: #b71c1c;
+    font-weight: bold;
+    background: #ffebee;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ffcdd2;
+    font-size: 0.9rem;
+}
